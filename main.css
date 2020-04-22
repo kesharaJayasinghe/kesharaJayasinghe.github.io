@@ -372,7 +372,7 @@ li {
 /*End portfolio*/
 
 /*Start timeline*/
-.timeline ul {
+.timeline .ulmain {
   border-left: 4px solid #0099ff;
   border-radius: 0.8rem;
   background-color: rgba(0, 0, 0, 0, 0.05);
@@ -389,7 +389,22 @@ li {
   text-transform: uppercase;
   font-weight: 300;
   margin-bottom: 1rem;
+  opacity: 0.4;
+}
+
+.timeline h2 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 0.6rem;
   opacity: 0.3;
+}
+
+.timeline .bulletUl {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 0.6rem;
+  opacity: 0.9;
 }
 
 .timeline .date {
@@ -587,8 +602,12 @@ button:hover {
     font-size: 4rem;
   }
 
-  .timeline ul {
+  .timeline .ulmain {
     margin: 0 0 0 auto;
+  }
+
+  .bulletUl li {
+    margin-left: 2rem;
   }
 
   .timeline .date::before {
@@ -664,3 +683,12 @@ button:hover {
 }
 
 /*End media queries*/
+
+particle {
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+}
