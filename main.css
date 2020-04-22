@@ -441,13 +441,14 @@
   textarea {
     width: 100%;
     padding: 1rem;
-    margin-bottom: 5px;
+    margin-top: 3px;
+    margin-bottom: 15px;
     border: none;
     outline-color: #0099ff;
     border-radius: 1rem;
   }
   
-  input[type="submit"] {
+  /* input[type="submit"] {
     width: initial;
     background-color: #00c0fa;
     color: #eee;
@@ -458,6 +459,22 @@
   }
   
   input[type="submit"]:hover {
+    color: #16162d;
+    background-color: #0099ff;
+  } */
+
+  button {
+    width: initial;
+    background-color: #00c0fa;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+    font-weight: 600;
+  }
+  
+  button:hover {
     color: #16162d;
     background-color: #0099ff;
   }
