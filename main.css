@@ -449,7 +449,7 @@ li {
 /*End timeline*/
 
 /*Start contact*/
-form {
+/* form {
   width: 70%;
   margin: 0 auto;
 }
@@ -468,7 +468,7 @@ textarea {
   border: none;
   outline-style: none;
   border-radius: 1rem;
-}
+} */
 
 /* input[type="submit"] {
     width: initial;
@@ -485,6 +485,20 @@ textarea {
     background-color: #0099ff;
   } */
 
+.contact-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.contact-intro p {
+  font-size: 1.7rem;
+  padding: 0 0 2rem 0;
+  text-align: center;
+}
+
 button {
   width: initial;
   background-color: #00c0fa;
@@ -494,6 +508,9 @@ button {
   cursor: pointer;
   transition: background-color 650ms;
   font-weight: 600;
+  border-style: none;
+  outline-style: none;
+  margin-bottom: 20rem;
 }
 
 button:hover {
@@ -501,6 +518,79 @@ button:hover {
   background-color: #0099ff;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  padding: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border-style: none;
+  outline-style: none;
+}
+
+.modal-content {
+
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  margin: auto;
+  width: 47%;
+  border-radius: 0.8rem;
+  text-align: center;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 650ms;
+  animation-name: animatetop;
+  animation-duration: 650ms;
+}
+
+.modal-content p {
+  display: inline-flex;
+  color: #131313;
+  padding: 0;
+  margin-top: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.close-btn {
+  float: right;
+  color: lightgray;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  color: darkgray;
+}
+
+/* @-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+} */
+
+@keyframes animatetop {
+  from {
+    top: 20rem;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
 /*End contact*/
 
 /*Start footer*/
@@ -514,6 +604,7 @@ button:hover {
 
 .copyright p {
   font-size: 1.4rem;
+  padding: 0 0 0.6rem 0;
 }
 
 .up {
@@ -617,6 +708,10 @@ button:hover {
   .timeline .date::after {
     left: -5.8rem;
   }
+
+  .modal-content {
+    width: 60%;
+  }
 }
 
 /*scren size 500px (mobile devices)*/
@@ -680,6 +775,40 @@ button:hover {
   .up {
     right: 2rem;
   }
+
+  /* Email Modal START */
+  .modal-content {
+
+    position: relative;
+    background-color: white;
+    /* padding: 20px; */
+    margin: auto;
+    width: 90%;
+    border-radius: 0.8rem;
+    text-align: center;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 650ms;
+    animation-name: animatetop;
+    animation-duration: 650ms;
+  }
+  
+  .modal-content p {
+    display: inline-flex;
+    color: #131313;
+    font-size: 1.5rem;
+    padding: 0; 
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .close-btn {
+    float: right;
+    color: lightgray;
+    font-size: 2.5rem;
+    padding: 0;
+    font-weight: bold;
+  }
+  /* Email Modal END */
 }
 
 /*End media queries*/
