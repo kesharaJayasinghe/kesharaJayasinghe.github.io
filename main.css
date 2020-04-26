@@ -500,7 +500,7 @@ textarea {
   text-align: center;
 }
 
-button {
+.contact-btn {
   width: initial;
   background-color: #00c0fa;
   color: #eee;
@@ -514,7 +514,7 @@ button {
   margin-bottom: 20rem;
 }
 
-button:hover {
+.contact-btn:hover {
   color: #16162d;
   background-color: #0099ff;
 }
@@ -567,6 +567,27 @@ button:hover {
 
 .close-btn:hover {
   color: darkgray;
+}
+
+.cpy-btn {
+  display: inline-flex;
+  width: auto;
+  background-color: white;
+  color: #0099ff;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: color 650ms;
+  font-weight: 600;
+  border-style: none;
+  outline-style: none;
+  font-size: 1.8rem;
+  /* margin-bottom: 20rem; */
+}
+
+.cpy-btn:hover {
+  color: #0000ff;
+  /* background-color: #0099ff; */
 }
 
 /* @-webkit-keyframes animatetop {

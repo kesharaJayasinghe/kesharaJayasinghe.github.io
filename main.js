@@ -182,3 +182,22 @@ function createParticle(x, y) {
     particle.remove();
   };
 }
+
+// Copy to clipboard
+// function cpyClipbrd(){
+//   var cpyTxt = document.getElementById("emailAddr");
+//   cpyTxt.select();
+//   cpyTxt.setSelectionRange(0, 99999);
+//   document.execCommand("copy");
+//   alert("Copied to Clipboard!");
+// }
+
+function copyToClipboard() {
+  var range = document.createRange();
+  range.selectNode(document.getElementById("emailAddr"));
+  window.getSelection().removeAllRanges(); // clear current selection
+  window.getSelection().addRange(range); // to select text
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
+  alert("Copied to Clipboard!");
+}
