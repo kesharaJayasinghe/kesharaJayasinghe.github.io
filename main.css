@@ -590,7 +590,7 @@ textarea {
   /* background-color: #0099ff; */
 }
 
-/* @-webkit-keyframes animatetop {
+@-webkit-keyframes animatetop {
   from {
     top: -300px;
     opacity: 0;
@@ -600,7 +600,7 @@ textarea {
     top: 0;
     opacity: 1
   }
-} */
+}
 
 @keyframes animatetop {
   from {
@@ -611,6 +611,75 @@ textarea {
   to {
     top: 0;
     opacity: 1
+  }
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 200px;
+  margin-left: -100px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30%;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 20%;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30%;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 20%;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30%;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 20%;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30%;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 20%;
+    opacity: 0;
   }
 }
 /*End contact*/
@@ -800,7 +869,6 @@ textarea {
 
   /* Email Modal START */
   .modal-content {
-
     position: relative;
     background-color: white;
     /* padding: 20px; */
@@ -813,16 +881,16 @@ textarea {
     animation-name: animatetop;
     animation-duration: 650ms;
   }
-  
+
   .modal-content p {
     display: inline-flex;
     color: #131313;
     font-size: 1.5rem;
-    padding: 0; 
+    padding: 0;
     text-align: center;
     justify-content: center;
   }
-  
+
   .close-btn {
     float: right;
     color: lightgray;
@@ -832,9 +900,9 @@ textarea {
   }
   /* Email Modal END */
 }
-
 /*End media queries*/
 
+/* Particle animation START */
 particle {
   position: fixed;
   left: 0;
@@ -843,3 +911,4 @@ particle {
   pointer-events: none;
   opacity: 0;
 }
+/* Particle animation END */
