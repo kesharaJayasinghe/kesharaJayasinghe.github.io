@@ -446,7 +446,6 @@ li {
   background-color: #131313;
   left: -7.8rem;
 }
-
 /*End timeline*/
 
 /*Start contact*/
@@ -805,7 +804,7 @@ textarea {
   }
 }
 
-/*scren size 500px (mobile devices)*/
+/*screen size 600px (mobile devices)*/
 @media screen and (max-width: 600px) {
   .menu-toggler {
     top: 2rem;
@@ -857,6 +856,7 @@ textarea {
 
   .timeline .date::before {
     font-size: 1.4rem;
+    white-space:pre-wrap;
   }
 
   form {
