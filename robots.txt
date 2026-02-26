@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kesharajayasinghe.github.io/sitemap.xml
